@@ -15,4 +15,6 @@ Using python to generate glad code(need to install glad first):
 ```python
 glad --api gl=3.3 --profile=core --generator=c --out-path=./glad
 ```
-Then copy include and src files to project. 
+Then copy include and src files to project.
+
+## VBO\VAO\EBO

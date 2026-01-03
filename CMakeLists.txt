@@ -14,5 +14,10 @@ add_subdirectory(third_party/glfw)
 add_library(glad STATIC third_party/glad/src/glad.c)
 target_include_directories(glad PUBLIC third_party/glad/include)
 
-add_executable(application src/application.cpp)
+add_executable(application src/application.cpp
+                           src/index_buffer_object.cpp
+                           src/shader.cpp
+                           src/vertex_array_object.cpp
+                           src/vertex_buffer_object.cpp
+                           src/util.cpp)
 target_link_libraries(application glfw glad opengl32)
